@@ -22,10 +22,8 @@ public class CORSFilter extends OncePerRequestFilter {
         response.setHeader("Access-Control-Allow-Headers", "authorization, content-type, xsrf-token");
         response.addHeader("Access-Control-Expose-Headers", "xsrf-token");
         if ("OPTIONS".equals(request.getMethod())) {
-            System.out.println("enters in if");
             response.setStatus(HttpServletResponse.SC_OK);
         } else {
-            System.out.println("enters in else");
             filterChain.doFilter(request, response);
         }
     }
