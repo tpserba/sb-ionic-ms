@@ -4,6 +4,9 @@ Ionic, Spring boot and microservices
 The project aims to serve as practice for Spring boot, microservices and Ionic.
 The provided default view (the website) is used, and data is displayed, retrieved after a service call from a MySQL database, upon user interaction.
 
+The android build is not uploaded as it's not fully functional. 
+
+
 A MySQL database is used running a Docker image.
 
 
